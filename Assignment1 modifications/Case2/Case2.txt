@@ -1,0 +1,29 @@
+1+4+9+16+25+36+-------------------100
+
+
+
+Test cases
+
+
+
+Testcase no         Test case description           Given Input       Expected Output       Actual Output       Result
+
+
+
+1                   Passing a integer value              4                 30                  30                Pass
+
+
+
+2                   Passing a float value                .07              invalid input       invalid input      Pass
+
+
+
+3                   Passing a string value              pavan            invalid input       invalid input      Pass
+
+
+
+4                   Passing a value                      3                   14                    14            Pass
+
+
+
+5                   Passing a value                      1                   1                     1             Pass

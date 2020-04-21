@@ -1,0 +1,29 @@
+Case 1:
+
+Parse the give command line and display in the below format
+
+Input: parser.exe 1 a sss 4.5643
+
+Output:
+
+Type         Vaule Size of
+
+Char           A    X
+
+Int            1    X
+
+String        Sss   X
+
+Float/double 4.5643 X
+
+
+
+-> Java does not provide anything like C's sizeof().
+
+
+
+->Java object allocation and construction are tied together (it is impossible to use an allocated but uninitialized object instance). If a Java class defines fields that are references to further objects, it is also common to set them at construction time. 
+
+
+
+->Allocating a Java object therefore frequently allocates numerous interconnected object instances: an object graph. Coupled with automatic garbage collection, this is all too convenient and can make you feel like you never have to worry about Java memory allocation details.

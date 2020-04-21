@@ -1,0 +1,19 @@
+Case 4:
+
+		What is the purpose and difference in public, private and protected access specifiers. Illustratea design example with this.
+
+
+
+
+
+
+
+-> Public:The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.
+
+
+
+->Private: The access level of a private modifier is only within the class. It cannot be accessed from outside the class.
+
+
+
+->Protected: The access level of a protected modifier is within the package and outside the package through child class. If you do not make the child class, it cannot be accessed from outside the package.

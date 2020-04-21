@@ -1,0 +1,209 @@
+Write your own program that explains the below.
+
+ Variable Scope
+
+ Modifier Types
+
+ Storage Classes
+
+
+
+
+
+Variable Scope:- 
+
+		Scope of a variable is the part of the program where the variable is accessible. Like C/C++, in Java, all identifiers are lexically (or statically) scoped, i.e.scope of a variable can determined at compile time and independent of function call stack.Java programs are organized in the form of classes. Every class is part of some package.
+
+
+
+Java scope rules can be covered under following categories.
+
+
+
+	Member Variables (Class Level Scope):
+
+	------------------------------------
+
+
+
+These variables must be declared inside class (outside any function). They can be directly accessed anywhere in class. Let’s take a look at an example:
+
+
+
+public class Test
+
+{
+
+    // All variables defined directly inside a class 
+
+    // are member variables
+
+    int a;
+
+    private String b
+
+    void method1() {....}
+
+    int method2() {....}
+
+    char c;
+
+}
+
+
+
+•  We can declare class variables anywhere in class, but outside methods.
+
+•  Access specified of member variables doesn’t effect scope of them within a class.
+
+•  Member variables can be accessed outside a class with following rules
+
+
+
+Modifier      Package  Subclass  World
+
+
+
+public          Yes      Yes     Yes
+
+
+
+protected       Yes      Yes     No
+
+
+
+Default (no
+
+modifier)       Yes       No     No
+
+
+
+private         No        No     No
+
+
+
+
+
+	Local Variables (Method Level Scope):
+
+	------------------------------------
+
+					Variables declared inside a method have method level scope and can’t be accessed outside the method.
+
+public class Test
+
+{
+
+    void method1() 
+
+    {
+
+       // Local variable (Method level scope)
+
+       int x;
+
+    }
+
+}
+
+
+
+Note : Local variables don’t exist after method’s execution is over.
+
+
+
+
+
+	 Modifier Types: 
+
+	----------------
+
+
+
+Access Modifier with Method Overriding
+
+
+
+There are two types of modifiers in Java: 
+
+	1)access modifiers and 
+
+	2)non-access modifiers.
+
+
+
+Access Modifier:
+
+---------------
+
+            The access modifiers in Java specifies the accessibility or scope of a field, method, constructor, or class.We can change the access level of fields, constructors, methods, and class by applying the access modifier on it.
+
+
+
+There are four types of Java access modifiers:
+
+
+
+-> Private: The access level of a private modifier is only within the class. It cannot be accessed from outside the class.
+
+
+
+-> Default: The access level of a default modifier is only within the package. It cannot be accessed from outside the package. If you do not specify any access level, it will be the default.
+
+
+
+-> Protected: The access level of a protected modifier is within the package and outside the package through child class. If you do noNt make the child class, it cannot be accessed from outside the package.
+
+
+
+-> Public: The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.
+
+
+
+
+
+There are many non-access modifiers, such as static, abstract, synchronized, native, volatile, transient, etc. Here, we are going to learn the access modifiers only.
+
+
+
+Understanding Java Access Modifiers
+
+
+
+Let's understand the access modifiers in Java by a simple table.
+
+
+
+Access Modifiers	within class	Withinpackage	outside package by subclass only
+
+	Outside package
+
+Private	Y	N	N	N
+
+
+
+Default	Y	Y	N	N
+
+
+
+Protected	Y	Y	Y	N
+
+
+
+Public	Y	Y	Y	Y
+
+
+
+Non-Access Modifiers:
+
+---------------------
+
+Java provides a number of non-access modifiers to achieve many other functionality.
+
+•	The static modifier for creating class methods and variables.
+
+•	The final modifier for finalizing the implementations of classes, methods and variables.
+
+•	The abstract modifier for creating abstract classes and methods.
+
+•       The synchronized and volatile modifiers, which are used for threads.
